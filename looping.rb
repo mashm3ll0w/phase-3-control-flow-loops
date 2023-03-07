@@ -27,5 +27,13 @@ def fizzbuzz_printer
 end
 
 def reverse_string(str)
-  # your code here
+  reversed = []
+  str_length = str.length
+
+  until str_length == 0
+    reversed.push(str[str_length - 1])
+    str_length -= 1
+  end 
+  
+  reversed.join("")
 end
